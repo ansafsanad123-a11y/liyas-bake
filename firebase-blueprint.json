@@ -1,0 +1,86 @@
+{
+  "entities": {
+    "products": {
+      "title": "Products",
+      "description": "Bakery catalog items",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "category": { "type": "string" },
+        "description": { "type": "string" },
+        "image": { "type": "string" },
+        "availabilityBadge": { "type": "string" },
+        "isFeatured": { "type": "boolean" },
+        "isHidden": { "type": "boolean" },
+        "orderIndex": { "type": "number" },
+        "ingredients": { "type": "array", "items": { "type": "string" } },
+        "allergens": { "type": "array", "items": { "type": "string" } },
+        "priceEstimate": { "type": "string" }
+      },
+      "required": ["id", "name", "category"]
+    },
+    "gallery": {
+      "title": "Gallery Items",
+      "description": "Showcase photos for bakery portfolio",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "title": { "type": "string" },
+        "category": { "type": "string" },
+        "imageUrl": { "type": "string" },
+        "description": { "type": "string" },
+        "uploadDate": { "type": "string" }
+      },
+      "required": ["id", "title", "imageUrl"]
+    },
+    "specialOrders": {
+      "title": "Special Orders",
+      "description": "Custom cake and catering order requests",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "customerName": { "type": "string" },
+        "phone": { "type": "string" },
+        "email": { "type": "string" },
+        "occasion": { "type": "string" },
+        "preferredDate": { "type": "string" },
+        "servingSize": { "type": "string" },
+        "message": { "type": "string" },
+        "specialRequirements": { "type": "string" },
+        "referenceImage": { "type": "string" },
+        "status": { "type": "string" },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["id", "customerName", "email"]
+    },
+    "testimonials": {
+      "title": "Testimonials",
+      "description": "Customer reviews and ratings",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "rating": { "type": "number" },
+        "comment": { "type": "string" },
+        "occasion": { "type": "string" },
+        "date": { "type": "string" },
+        "avatarUrl": { "type": "string" },
+        "isApproved": { "type": "boolean" }
+      },
+      "required": ["id", "name", "comment"]
+    },
+    "settings": {
+      "title": "Bakery Settings & Store Info",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "siteName": { "type": "string" },
+        "tagline": { "type": "string" },
+        "phone": { "type": "string" },
+        "email": { "type": "string" },
+        "address": { "type": "string" }
+      }
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Liya's Bake",
+  "description": "Premium luxury bakery showcasing handcrafted cakes, pastries, custom orders, and artisanal delights.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
